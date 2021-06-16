@@ -38,7 +38,7 @@ const BookingDetails = () => {
                             <h4 className="mb-4">User Info</h4>
                             <p><b>Name:</b> {booking.user && booking.user.name}</p>
                             <p><b>Email:</b> {booking.user && booking.user.email}</p>
-                            <p><b>Amount:</b> ${booking.amountPaid}</p>
+                            <p><b>Amount:</b> ₹{booking.amountPaid}</p>
 
                             <hr />
 
@@ -80,7 +80,7 @@ const BookingDetails = () => {
                                     </div>
 
                                     <div className="col-4 col-lg-2 mt-4 mt-lg-0">
-                                        <p>${booking.room.pricePerNight}</p>
+                                        <p>₹{booking.room.pricePerNight}</p>
                                     </div>
 
                                     <div className="col-4 col-lg-3 mt-4 mt-lg-0">

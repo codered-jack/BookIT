@@ -61,7 +61,7 @@ const MyBookings = () => {
                 id: booking._id,
                 checkIn: new Date(booking.checkInDate).toLocaleString('en-US'),
                 checkOut: new Date(booking.checkOutDate).toLocaleString('en-US'),
-                amount: `$${booking.amountPaid}`,
+                amount: `₹${booking.amountPaid}`,
                 actions:
                     <>
                         <Link href={`/bookings/${booking._id}`}>
